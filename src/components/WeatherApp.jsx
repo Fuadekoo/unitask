@@ -45,7 +45,7 @@ const WeatherApp = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-yellow-100'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-white'>
       <div className="flex items-center justify-between w-full max-w-md p-4 bg-white shadow-md rounded-lg">
         <input
           type="text"
@@ -66,7 +66,7 @@ const WeatherApp = () => {
           <div className="mb-2">
             <img src={getWeatherIcon(weather.weather[0].main)} alt="weather" className="w-12 h-12" />
           </div>
-          <div className="text-2xl font-semibold">{weather.main.temp} °C</div>
+          <div className="text-2xl font-semibold">{weather.main.temp/10} °C</div>
           <div className="text-lg text-gray-600">{weather.name}</div>
           <div className="flex mt-2 space-x-4">
             <div className="flex items-center">

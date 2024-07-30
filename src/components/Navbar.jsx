@@ -30,6 +30,14 @@ const Navbar = () => {
             Tic-Tac-Toe
           </Link>
         </li>
+        <li className="group">
+          <Link
+            to="/coin-flip"
+            className="text-white text-lg font-semibold transition duration-300 ease-in-out transform group-hover:scale-110"
+          >
+            Coin Flip Game
+          </Link>
+        </li>
       </ul>
     </nav>
   );
